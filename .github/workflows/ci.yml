@@ -36,4 +36,4 @@ jobs:
           personal_token: ${{ secrets.GH_PAGES_DEPLOY }}
           force_orphan: true
           publish_branch: gh-pages-main
-          publish_dir: ./dist
+          publish_dir: ./build
