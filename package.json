@@ -3,7 +3,8 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "svelte-kit sync && svelte-package",
+		"build": "svelte-kit sync && vite build",
+		"build:production": "svelte-kit sync && vite build --mode=production",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
@@ -12,6 +13,7 @@
 	"devDependencies": {
 		"@bulatdashiev/svelte-slider": "^1.0.3",
 		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/adapter-static": "^1.0.0-next.43",
 		"@sveltejs/kit": "next",
 		"@sveltejs/package": "next",
 		"@types/lodash": "^4.14.186",
